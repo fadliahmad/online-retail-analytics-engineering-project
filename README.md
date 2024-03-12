@@ -1,49 +1,76 @@
-Overview
-========
+# Online Retail - Analytics Engineering Project
 
-Welcome to Astronomer! This project was generated after you ran 'astro dev init' using the Astronomer CLI. This readme describes the contents of the project, as well as how to run Apache Airflow on your local machine.
+## Introduction 
+This project aims to perform end-to-end data engineer analytics on the Online Retail dataset using various tools and technologies, including Google Cloud Storage, Python, Docker, Astronomer, Apache Airflow, BigQuery, Soda, dbt, and Metabase. 
 
-Project Contents
-================
+Executive summary: 
 
-Your Astro project contains the following files and folders:
+🔧 What I do:
 
-- dags: This folder contains the Python files for your Airflow DAGs. By default, this directory includes two example DAGs:
-    - `example_dag_basic`: This DAG shows a simple ETL data pipeline example with three TaskFlow API tasks that run daily.
-    - `example_dag_advanced`: This advanced DAG showcases a variety of Airflow features like branching, Jinja templates, task groups and several Airflow operators.
-- Dockerfile: This file contains a versioned Astro Runtime Docker image that provides a differentiated Airflow experience. If you want to execute other commands or overrides at runtime, specify them here.
-- include: This folder contains any additional files that you want to include as part of your project. It is empty by default.
-- packages.txt: Install OS-level packages needed for your project by adding them to this file. It is empty by default.
-- requirements.txt: Install Python packages needed for your project by adding them to this file. It is empty by default.
-- plugins: Add custom or community plugins for your project to this file. It is empty by default.
-- airflow_settings.yaml: Use this local-only file to specify Airflow Connections, Variables, and Pools instead of entering them in the Airflow UI as you develop DAGs in this project.
+    📥 Importing and loading the dataset from local storage into Google Cloud Storage
+    🐳 Creating a container in Docker to run the Airflow
+    🔄 Transforming data using dbt 
+    🪁 Creating a data pipeline using Airflow
+    🍹 Checking the data quality using Soda.io 
+    🏭 Managing data warehouse in BigQuery (dimensional, fact, and mart table concept) 
+    📊 Creating a dashboard and analyzing the data using Metabase 
+      
+📒 Notes: 
 
-Deploy Your Project Locally
-===========================
+## Architecture 
+🏛️ The architecture I used in this project: 
+<img src="img/architecture.png"> 
 
-1. Start Airflow on your local machine by running 'astro dev start'.
+## Tools 
+🔧 Tools I used in this project:
 
-This command will spin up 4 Docker containers on your machine, each for a different Airflow component:
+    🖥️ Google Cloud Platform
+        - Google Cloud Storage  
+        - Google BigQuery 
+    🐳 Docker
+    🐍 Python 
+    🔮 Astronomer CLI 
+    🪁 Apache Airflow 
+    🍹 Soda.io
+    ☄️ Cosmos 
+    🔄 dbt
+    🗃️ SQL
+    📊 Metabase
 
-- Postgres: Airflow's Metadata Database
-- Webserver: The Airflow component responsible for rendering the Airflow UI
-- Scheduler: The Airflow component responsible for monitoring and triggering tasks
-- Triggerer: The Airflow component responsible for triggering deferred tasks
+## Dataset 
+Here is the dataset used in this project - https://www.kaggle.com/datasets/tunguz/online-retail?resource=download 
 
-2. Verify that all 4 Docker containers were created by running 'docker ps'.
+## Data Model 
+📑 Data modeling in this project: 
+<img src="img/data modelling.png"> 
 
-Note: Running 'astro dev start' will start your project with the Airflow Webserver exposed at port 8080 and Postgres exposed at port 5432. If you already have either of those ports allocated, you can either [stop your existing Docker containers or change the port](https://docs.astronomer.io/astro/test-and-troubleshoot-locally#ports-are-not-available).
+## Creating Google Cloud Storage Bucket 
+📥 It's an online file storage provided as a service by GCP. It helps us store, and retrieve files from anywhere in the cloud with an internet connection.
+<img src="img/GCS Bucket.png"> 
 
-3. Access the Airflow UI for your local Airflow project. To do so, go to http://localhost:8080/ and log in with 'admin' for both your Username and Password.
+## Creating a data pipeline using Airflow
+🪁 Airflow is the open-source tool to set up your ETL pipeline. 
+<img src="img/GCS Bucket.png">
 
-You should also be able to access your Postgres Database at 'localhost:5432/postgres'.
+## Data Transformation using dbt and Data Quality Checking using Soda.io 
+    🔄 dbt is an open-source command line tool that helps analysts and engineers transform data in their warehouse more effectively; 
+    🍹 Soda.io is a tool for data quality tests in the data stack and workflows. 
+<img src="img/Data Checking using Soda.png"> 
 
-Deploy Your Project to Astronomer
-=================================
+## Managing data warehouse in BigQuery 
+🏭 It's a warehouse provided by Google that helps us store, and analyze large-scale data sets using a SQL-type interface and query language. 
+<img src="img/BQ Retail Dataset.png"> 
 
-If you have an Astronomer account, pushing code to a Deployment on Astronomer is simple. For deploying instructions, refer to Astronomer documentation: https://docs.astronomer.io/cloud/deploy-code/
+## Dashboard 
+🔍 Metabse Dashboard result: 
+<img src="img/Metabase report.png">  
 
-Contact
-=======
+I'm really sorry for that pie chart :D
 
-The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
+## Full tutorial
+
+Big thanks to Marc Lamberti. I appreciate your tutorial and explanation of this project. This project is quite complex, but you explain it in very easy way to understand.
+
+You can find the full tutorial for this project at: https://www.youtube.com/watch?v=DzxtCxi4YaA&t=481s&ab_channel=DatawithMarc 
+
+You can find his LinkedIn profile here: https://www.linkedin.com/in/marclamberti/ 
