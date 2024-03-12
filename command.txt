@@ -1,0 +1,20 @@
+If you want to looking for some registry code: 
+https://registry.astronomer.io/  
+
+If you want to looking for operator in astronomer 
+https://astro-sdk-python.readthedocs.io/en/stable/ 
+
+astro dev init 
+astro dev start 
+
+airflow tasks test retail create_retail_dataset 2023-01-01
+airflow tasks test retail gcs_to_raw 2023-01-01  
+
+soda test-connection -d online_retail -c include/soda/configuration.yml
+soda scan -d online_retail -c include/soda/configuration.yml include/soda/checks/sources/raw_invoices.yml
+
+airflow tasks test retail check_load 2023-01-01
+
+source dbt_venv/bin/activate
+dbt deps
+dbt run --profiles-dir /usr/local/airflow/include/dbt/
