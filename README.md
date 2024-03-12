@@ -50,7 +50,7 @@ Here is the dataset used in this project - https://www.kaggle.com/datasets/tungu
 
 ## Creating a data pipeline using Airflow
 🪁 Airflow is the open-source tool to set up your ETL pipeline. 
-<img src="img/GCS Bucket.png">
+<img src="img/airflow  Chain.png">
 
 ## Data Transformation using dbt and Data Quality Checking using Soda.io 
     🔄 dbt is an open-source command line tool that helps analysts and engineers transform data in their warehouse more effectively; 
