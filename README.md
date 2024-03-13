@@ -48,6 +48,10 @@ Here is the dataset used in this project - https://www.kaggle.com/datasets/tungu
 📥 It's an online file storage provided as a service by GCP. It helps us store, and retrieve files from anywhere in the cloud with an internet connection.
 <img src="img/GCS Bucket.png"> 
 
+## Container in Docker 
+🐳 Docker is a tool you can use to define and share multi-container applications. In this project I used docker to run Airflow and Metabase locally. 
+<img src="img/Docker.png"> 
+
 ## Creating a data pipeline using Airflow
 🪁 Airflow is the open-source tool to set up your ETL pipeline. 
 <img src="img/airflow  Chain.png">
