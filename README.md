@@ -41,19 +41,19 @@ Executive summary:
 Here is the dataset used in this project - https://www.kaggle.com/datasets/tunguz/online-retail?resource=download 
 
 ## Data Model 
-📑 Data modeling in this project: 
+    📑 Data modeling in this project: 
 <img src="img/data modelling.png"> 
 
 ## Creating Google Cloud Storage Bucket 
-📥 It's an online file storage provided as a service by GCP. It helps us store, and retrieve files from anywhere in the cloud with an internet connection.
+    📥 It's an online file storage provided as a service by GCP. It helps us store, and retrieve files from anywhere in the cloud with an internet connection.
 <img src="img/GCS Bucket.png"> 
 
 ## Container in Docker 
-🐳 Docker is a tool you can use to define and share multi-container applications. In this project I used docker to run Airflow and Metabase locally. 
+    🐳 Docker is a tool you can use to define and share multi-container applications. In this project I used docker to run Airflow and Metabase locally. 
 <img src="img/Docker.png"> 
 
 ## Creating a data pipeline using Airflow
-🪁 Airflow is the open-source tool to set up your ETL pipeline. 
+    🪁 Airflow is the open-source tool to set up your ETL pipeline. 
 <img src="img/airflow  Chain.png">
 
 ## Data Transformation using dbt and Data Quality Checking using Soda.io 
@@ -62,14 +62,14 @@ Here is the dataset used in this project - https://www.kaggle.com/datasets/tungu
 <img src="img/Data Checking using Soda.png"> 
 
 ## Managing data warehouse in BigQuery 
-🏭 It's a warehouse provided by Google that helps us store, and analyze large-scale data sets using a SQL-type interface and query language. 
+    🏭 It's a warehouse provided by Google that helps us store, and analyze large-scale data sets using a SQL-type interface and query language. 
 <img src="img/BQ Retail Dataset.png"> 
 
 ## Dashboard 
-🔍 Metabse Dashboard result: 
+    🔍 Metabse Dashboard result: 
 <img src="img/Metabase report.png">  
 
-I'm really sorry for that pie chart :D
+    I'm really sorry for that pie chart :D
 
 ## Full tutorial
 
